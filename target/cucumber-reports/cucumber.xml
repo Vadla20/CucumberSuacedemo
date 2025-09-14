@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="150.83" tests="10" skipped="0" failures="0" errors="0">
+<testcase classname="Verify Homepage Load" name="Verify that the homepage loads successfully." time="5.787">
+<system-out><![CDATA[
+Given I am on the homepage of Urban Ladder..................................passed
+Then The page title should contain "Urban Ladder"...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Signup" name="Verify user can sign up successfully" time="8.966">
+<system-out><![CDATA[
+Given I am on the homepage of Urban Ladder..................................passed
+When Hover on the profile icon..............................................passed
+And Click on the Sign Up button.............................................passed
+And Complete the signup process with email and password "Testing1!".........passed
+Then Verify My Account is visible...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Signup" name="Verify user can LOG OUT successfully" time="11.237">
+<system-out><![CDATA[
+Given I am on the homepage of Urban Ladder..................................passed
+When Hover on the profile icon..............................................passed
+And Click on the Sign Up button.............................................passed
+And Complete the signup process with email and password "Testing1!".........passed
+Then Verify My Account is visible...........................................passed
+And Click on logout button..................................................passed
+Then Verify Login button is visible.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search Functionality" name="Verify the search functionality with a valid product" time="11.839">
+<system-out><![CDATA[
+When Hover on the profile icon..............................................passed
+And Click on the Sign Up button.............................................passed
+And Complete the signup process with email and password "Testing1!".........passed
+Given I am on the homepage of Urban Ladder..................................passed
+When I search for "Sofa" from search bar....................................passed
+Then The search results should display items related to "Sofa"..............passed
+]]></system-out>
+</testcase>
+<testcase classname="Search Functionality" name="Verify that a product can be added to the wishlist." time="13.667">
+<system-out><![CDATA[
+When Hover on the profile icon..............................................passed
+And Click on the Sign Up button.............................................passed
+And Complete the signup process with email and password "Testing1!".........passed
+Given I search for "Table" from search bar..................................passed
+When Add the first product in the search results to the wishlist............passed
+Then The product should be added to the wishlist successfully...............passed
+]]></system-out>
+</testcase>
+<testcase classname="Search Functionality" name="Verify that the product details page opens." time="13.514">
+<system-out><![CDATA[
+When Hover on the profile icon..............................................passed
+And Click on the Sign Up button.............................................passed
+And Complete the signup process with email and password "Testing1!".........passed
+Given I am on the homepage of Urban Ladder..................................passed
+When I search for "Chairs" from search bar..................................passed
+When Click on view product button from the search results...................passed
+Then The product details page should open with the correct product information.passed
+]]></system-out>
+</testcase>
+<testcase classname="Search Functionality" name="Verify that price filters work correctly." time="13.833">
+<system-out><![CDATA[
+When Hover on the profile icon..............................................passed
+And Click on the Sign Up button.............................................passed
+And Complete the signup process with email and password "Testing1!".........passed
+Given I am on the homepage of Urban Ladder..................................passed
+When I search for "Sofa" from search bar....................................passed
+When Apply a price filter...................................................passed
+Then All displayed products should fall within the selected price range.....passed
+]]></system-out>
+</testcase>
+<testcase classname="Search Functionality" name="Verify product details in the wishlist." time="15.132">
+<system-out><![CDATA[
+When Hover on the profile icon..............................................passed
+And Click on the Sign Up button.............................................passed
+And Complete the signup process with email and password "Testing1!".........passed
+Given I search for "Table" from search bar..................................passed
+When Add the first product in the search results to the wishlist............passed
+Then Verify the product details in wishlist Page............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search Functionality" name="Verify product can be added to compare section." time="12.593">
+<system-out><![CDATA[
+When Hover on the profile icon..............................................passed
+And Click on the Sign Up button.............................................passed
+And Complete the signup process with email and password "Testing1!".........passed
+Given I search for "Dining" from search bar.................................passed
+When Add the first product to compare section...............................passed
+Then Verify the product is added to product compare section.................passed
+]]></system-out>
+</testcase>
+<testcase classname="Footer functionality" name="Verify the functionality of footer links." time="4.411">
+<system-out><![CDATA[
+Given I am on the homepage of Urban Ladder..................................passed
+When Click on the Contact Us link in the footer.............................passed
+Then The Contact Us page should open with relevant information..............passed
+]]></system-out>
+</testcase>
+</testsuite>
